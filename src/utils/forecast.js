@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
       callback('Unable to find location-forecast', undefined)
     } else {
       callback(undefined, body.daily.data[0].summary + '\
-       Jelenleg' + body.currently.temperature + ' Celsius fok van. \
+       Jelenleg ' + body.currently.temperature + ' Celsius fok van. \
        Esély az esőre: ' + body.currently.precipProbability + '%.  \
        Ma várható maximum hőmérséklet: ' + body.daily.data[0].temperatureHigh + 'Celsius fok. \
        A várható minimum: ' + body.daily.data[0].temperatureLow + ' Celsius fok.')
