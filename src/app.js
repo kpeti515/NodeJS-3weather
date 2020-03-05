@@ -97,5 +97,5 @@ app.get('*', (req, res) => {
 })
 // 3000:only for localhost. Other option: process.env.PORT
 app.listen(port, () => {
-  console.log('Server is up on port' + port)
+  console.log('Server is up on port ' + port)
 })
